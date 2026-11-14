@@ -4,7 +4,7 @@ runtime-version: '51'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.node20
+  - org.freedesktop.Sdk.Extension.node22
 command: Pulsar
 finish-args:
   - --share=network
@@ -69,7 +69,7 @@ modules:
   - name: pulsar
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node20/bin
+      append-path: /usr/lib/sdk/node22/bin
     build-commands:
       - install -d /app/lib/pulsar/requirements
       - ln -sf /usr/bin/ffmpeg /app/lib/pulsar/requirements/ffmpeg
